@@ -7,9 +7,18 @@ const Square = styled.div`
     background-color: cornflowerblue;
     opacity: 0.7;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: -60px;
+    left: -60px;
     z-index: -1;
+
+
+    animation: square 25s linear ;
+    
+        @keyframes square {
+            to{
+                transform : translate(100vw, 100vh);
+        }
+    }
 `;
 
 const AnimationShape = () => {
