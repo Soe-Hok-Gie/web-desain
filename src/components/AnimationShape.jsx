@@ -12,7 +12,7 @@ const Square = styled.div`
     z-index: -1;
 
 
-    animation: square 25s linear ;
+    animation: square 25s linear alternate infinite;
     
         @keyframes square {
             to{
