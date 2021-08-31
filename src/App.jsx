@@ -21,11 +21,17 @@ background-color: burlywood;
 
 const App = () => {
   return (
+    <> 
   <Container>
       <Navbar/>
       <Intro/>  
       <IntoShape/>
     </Container>
+
+    <Container>
+      <Image/>
+    </Container>
+    </>//route
 );
 };
 export default App;
