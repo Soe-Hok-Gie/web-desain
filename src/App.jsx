@@ -7,6 +7,7 @@ import Features from "./components/Features";
 const Container = styled.div`
   height: 100vh;
   overflow: hidden;//overflow:hidden mencegah scrollbar muncul, bahkan saat diperlukan.
+  position: relative;
 `
 
 const Shape = css`
@@ -24,6 +25,12 @@ clip-path: polygon(100% 0%, 79% 0%, 56% 100%, 100% 100%);
 background-color: burlywood;
 `
 
+const FeaturesShape = styled.div`
+${Shape}
+clip-path: polygon(100% 0%, 79% 0%, 56% 100%, 100% 100%);
+background-color: indianred;
+`
+
 const App = () => {
   return (
   <> 
@@ -35,6 +42,7 @@ const App = () => {
 
     <Container>
       <Features/>
+      <FeaturesShape/>
     </Container>
   </>//Route
   );
