@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import App from '../img/app.png';
+import AnimationShape from './AnimationShape';
 
 const Container = styled.div`
     display: flex;
@@ -59,6 +60,7 @@ const Features = () => {
                 <Desc> A web designer is a person who has the expertise to make a website look attractive. For example, illustration effects on websites, typography, contrast balance, layout, etc. They also focus on making designs with a user experience approach to make it easy to use.</Desc>
                 <Button>learn More</Button>
             </Right>
+            <AnimationShape/>
         </Container>
     );
 }

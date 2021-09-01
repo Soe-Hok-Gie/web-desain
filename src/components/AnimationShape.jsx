@@ -19,7 +19,7 @@ const Square = styled.div`
                 transform : translate(100vw, 100vh);
         }
     }
-`;
+`
 const Circle = styled.div`
     width: 100px;
     height: 100px;
@@ -38,7 +38,7 @@ const Circle = styled.div`
                 transform : translate(100vw, -100vh);
         }
     }
-`;
+`
 const Rect = styled.div`
     width: 50px;
     height: 100px;
@@ -57,14 +57,14 @@ const Rect = styled.div`
                 transform : translate(100vw, -50vh);
         }
     }
-`;
+`
 
 const AnimationShape = () => {
     return (
     <>
-        <Square/>;
-        <Circle/>;
-        <Rect/>;
+        <Square/>
+        <Circle/>
+        <Rect/>
     </>
     )
 };
