@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import How from "../img/how.png";
 
 const Container = styled.div`
     display: flex;
@@ -9,6 +10,9 @@ const Container = styled.div`
 const Left = styled.div`
     width: 50%;
 `;
+const Image = styled.img`
+
+`;
 
 const Right = styled.div`
     width: 50%;
@@ -17,7 +21,7 @@ const Right = styled.div`
 const Service = () => {
     return (
         <Container>
-            <Left></Left>
+            <Left><Image src={How}></Image></Left>
             <Right></Right>
         </Container>
     );
