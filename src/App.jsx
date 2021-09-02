@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
 import Features from "./components/Features";
+import Service from "./components/Service"
 
 
 const Container = styled.div`
@@ -43,6 +44,10 @@ const App = () => {
     <Container>
       <Features/>
       <FeaturesShape/>
+    </Container>
+
+    <Container>
+      <Service/>
     </Container>
   </>//Route
   );
