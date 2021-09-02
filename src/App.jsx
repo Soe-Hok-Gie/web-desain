@@ -32,6 +32,12 @@ clip-path: polygon(0% 0%, 55% 0%, 33% 100%, 0% 100%);
 background-color: indianred;
 `
 
+const ServiceShape = styled.div`
+${Shape}
+clip-path: polygon(0% 0%, 33% 0%, 33% 100%, 0% 100%);
+background-color: coral;
+`
+
 const App = () => {
   return (
   <> 
@@ -48,6 +54,7 @@ const App = () => {
 
     <Container>
       <Service/>
+      <ServiceShape/>
     </Container>
   </>//Route
   );
