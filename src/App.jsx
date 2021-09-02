@@ -35,7 +35,7 @@ background-color: indianred;
 const ServiceShape = styled.div`
 ${Shape}
 clip-path: polygon(0% 0%, 33% 0%, 33% 100%, 0% 100%);
-background-color: coral;
+background-color: burlywood;
 `
 
 const App = () => {

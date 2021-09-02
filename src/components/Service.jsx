@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import How from "../img/grandma.png";
+import MiniCard from "./MiniCard"
 
 const Container = styled.div`
     display: flex;
@@ -34,6 +35,10 @@ const Desc = styled.p`
     margin-top: 20px;
 `;
 
+const CardContainer = styled.div`
+
+`;
+
 const Service = () => {
     return (
         <Container>
@@ -43,6 +48,7 @@ const Service = () => {
                     <Title>Trust and enjoy</Title>
                     <Desc>We will help you with the difficulties you experience during the learning process in the field of design, so that your high target in the digital field is immediately achieved.</Desc>
                 </Wrapper>
+                <CardContainer><MiniCard/></CardContainer>
             </Right>
         </Container>
     );
