@@ -7,6 +7,7 @@ const Container = styled.div`
     padding: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     -webkit-box-shadow: 3px 3px 26px -3px rgba(0,0,0,0.35); 
     box-shadow: 3px 3px 26px -3px rgba(0,0,0,0.35);
 
@@ -17,6 +18,8 @@ const Image = styled.img`
 `;
 
 const Text = styled.span`
+    margin-top: 10px;
+    text-align: center;
 
 `;
 
