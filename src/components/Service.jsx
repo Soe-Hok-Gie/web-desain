@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import How from "../img/grandma.png";
+import How from "../img/woman.png";
 import MiniCard from "./MiniCard"
+import Play from "../img/play.png"
 
 const Container = styled.div`
     display: flex;
@@ -12,8 +13,8 @@ const Left = styled.div`
     width: 50%;
 `;
 const Image = styled.img`
-    height: 75%;
-    margin-left: 100px;
+    height: 80%;
+    margin-left: 80px;
 `;
 
 const Right = styled.div`
@@ -52,6 +53,14 @@ const Button = styled.button`
     font-size: 20px;
     padding: 15px;
     margin-top: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+`;
+
+const Icon = styled.img `
+    margin-right: 10px;
+    width: 20px;
 `;
 
 
@@ -61,14 +70,16 @@ const Service = () => {
             <Left><Image src={How}></Image></Left>
             <Right>
                 <Wrapper>
-                    <Title>Trust and enjoy</Title>
-                    <Desc>We will help you with the difficulties you experience during the learning process in the field of design, so that your high target in the digital field is immediately achieved.</Desc>
+                    <Title> Enjoy it</Title>
+                    <Desc>Trends and user behavior can be used to predict the future of the digital media and advertising industry. In general, older people use traditional media more, while millennials who are under 40 prefer to use digital media.</Desc>
                     <CardContainer>
                         <MiniCard/>
                         <MiniCard/>
                         <MiniCard/>
                     </CardContainer>
-                    <Button>Look GrandMa</Button>
+                    <Button>
+                        <Icon src={Play}/>Playing
+                    </Button>
                 </Wrapper>
             </Right>
         </Container>
