@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import How from "../img/woman.png";
 import MiniCard from "./MiniCard"
-import Play from "../img/play.png"
+import Play from "../img/play.png";
+
 
 const Container = styled.div`
     display: flex;
@@ -13,6 +14,8 @@ const Left = styled.div`
     width: 50%;
 `;
 const Image = styled.img`
+    /*menangkap props image */
+    display: ${props=> props.open && "none"};//logika ternary
     height: 80%;
     margin-left: 80px;
 `;
@@ -65,9 +68,11 @@ const Icon = styled.img `
 
 
 const Service = () => {
+    const [open, setOpen] = useState(false);
     return (
         <Container>
-            <Left><Image src={How}></Image></Left>
+            <Left><Image open={open} src={How} />
+             </Left> {/*membuat props image */}
             <Right>
                 <Wrapper>
                     <Title> Enjoy it</Title>
@@ -77,7 +82,7 @@ const Service = () => {
                         <MiniCard/>
                         <MiniCard/>
                     </CardContainer>
-                    <Button>
+                     <Button onClick={()=>setOpen(true)}> {/* mengubah props */}
                         <Icon src={Play}/>Playing
                     </Button>
                 </Wrapper>
