@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
+    margin: 50px    ;
     padding: 20px;
     -webkit-box-shadow: 0px 0px 17px -11px rgba(0,0,0,0.58); 
     box-shadow: 0px 0px 17px -11px rgba(0,0,0,0.58);
@@ -13,14 +14,41 @@ const Container = styled.div`
 
 
 `
-const PriceContainer = styled.div``
-const Price = styled.span``
-const Type = styled.button``
-const List = styled.ul``
-const ListItem = styled.li``
-const Button = styled.button``
+const PriceContainer = styled.div`
+    display: flex;
+    align-items: center;
+`;
 
+const Price = styled.span`
+    font-weight: bold;
+    font-size: 50px;
+`;
 
+const Type = styled.button`
+    background-color: whitesmoke;
+    color: tomato;
+    border-radius: 20px;
+    border : 2px solid darkcyan;
+    margin: 10px 0;
+    padding: 10px;
+`;
+const List = styled.ul`
+    list-style: none;
+`;
+const ListItem = styled.li`
+    margin: 30px 0;
+`;
+
+const Button = styled.button`
+    background-color: darkcyan;
+    color: whitesmoke;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold ;
+    padding: 15px;
+    cursor: pointer;
+`;
 
 
 
@@ -29,14 +57,15 @@ const PriceCard = () => {
         <Container>
             <PriceContainer>
                 $<Price>20</Price>/month
-                    <Type>  Bassic Plan </Type>
-                        <List>
-                            <ListItem>A</ListItem>
-                            <ListItem>CD</ListItem>
-                            <ListItem>ED</ListItem>
-                        </List>
-                        <Button>Join</Button>
             </PriceContainer>
+            <Type>Bassic Plan</Type>
+            <List>
+                <ListItem>200 Hand-Crafted Template</ListItem>
+                <ListItem>Exclusive Support</ListItem>
+                <ListItem>50+ PreBuild Website</ListItem>
+                <ListItem>Premium Plugins</ListItem>{}
+            </List>
+            <Button>Join Now </Button>
         </Container>
     );
 }
