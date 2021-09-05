@@ -18,6 +18,8 @@ const Price = styled.span``
 const Type = styled.button``
 const List = styled.ul``
 const ListItem = styled.li``
+const Button = styled.button``
+
 
 
 
@@ -33,6 +35,7 @@ const PriceCard = () => {
                             <ListItem>CD</ListItem>
                             <ListItem>ED</ListItem>
                         </List>
+                        <Button>Join</Button>
             </PriceContainer>
         </Container>
     );
