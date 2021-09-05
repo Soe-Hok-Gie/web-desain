@@ -56,6 +56,10 @@ const App = () => {
       <Service/>
       <ServiceShape/>
     </Container>
+
+    <Container>
+     <Price/>
+    </Container>
   </>//Route
   );
 }
