@@ -38,7 +38,7 @@ const Button = styled.button`
     border: none;
     border-radius: 10px;
     padding: 10px 10px;
-    background-color: brown;
+    background-color: darkcyan;
     color: white;
     font-size: 20px;
     margin-top: 20px;

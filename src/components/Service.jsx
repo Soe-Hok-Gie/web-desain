@@ -57,13 +57,14 @@ const CardContainer = styled.div`
 `;
 
 const Button = styled.button`
-    width: 180px;
+    width: 100px;
     border: none;
     border-radius: 10px;
-    background-color: brown;
+    background-color: darkcyan;
     color: whitesmoke;
     font-size: 20px;
-    padding: 15px;
+    font-weight: bold;
+    padding: 10px;
     margin-top: 50px;
     cursor: pointer;
     display: flex;
@@ -100,7 +101,7 @@ const Service = () => {
                         <MiniCard/>
                     </CardContainer>
                      <Button onClick={()=>setOpen(true)}> {/* mengubah props */}
-                        <Icon src={Play}/>Playing
+                        <Icon src={Play}/>play
                     </Button>
                 </Wrapper>
             </Right>

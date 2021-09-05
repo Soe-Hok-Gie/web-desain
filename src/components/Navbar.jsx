@@ -39,7 +39,7 @@ const Menuitem = styled.li`
 const Button = styled.div`
     border: 2px solid black;
     padding: 5px 10px;// padding berfungsi untuk mengatur jarak elemen  dari dalam.
-    background-color: lightcoral;
+    background-color: darkcyan;
     color: whitesmoke;
     font-weight: bold;
     border-radius: 10px;

@@ -38,7 +38,7 @@ const Info = styled.div`
 
 const Button = styled.button`
     padding: 15px;
-    background-color: lightsalmon;
+    background-color: darkcyan;
     color: lavender;
     border: none;
     border-radius: 10px;
