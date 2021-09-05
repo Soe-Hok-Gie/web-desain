@@ -7,7 +7,10 @@ const Container = styled.div`
     box-shadow: 0px 0px 17px -11px rgba(0,0,0,0.58);
     background-color: whitesmoke;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    border: 10px ;
+
 
 `
 const PriceContainer = styled.div``
