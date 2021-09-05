@@ -52,18 +52,18 @@ const Button = styled.button`
 
 
 
-const PriceCard = ({Price, Type}) => {
+const PriceCard = ({price, type}) => {
     return (
         <Container>
             <PriceContainer>
-                $<Price>20</Price>/month
+                $<Price>{price}</Price>/month
             </PriceContainer>
-            <Type>Bassic Plan</Type>
+            <Type>{type} Plan</Type>
             <List>
                 <ListItem>200 Hand-Crafted Template</ListItem>
                 <ListItem>Exclusive Support</ListItem>
                 <ListItem>50+ PreBuild Website</ListItem>
-                <ListItem>Premium Plugins</ListItem>{}
+                <ListItem>Premium Plugins</ListItem>{""}
             </List>
             <Button>Join Now </Button>
         </Container>
