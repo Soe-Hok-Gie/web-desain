@@ -2,7 +2,9 @@ import styled, { css } from "styled-components";
 import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
 import Features from "./components/Features";
-import Service from "./components/Service"
+import Service from "./components/Service";
+import Price from "./components/Price";
+
 
 
 const Container = styled.div`
