@@ -52,7 +52,7 @@ const Button = styled.button`
 
 
 
-const PriceCard = () => {
+const PriceCard = ({Price, Type}) => {
     return (
         <Container>
             <PriceContainer>
