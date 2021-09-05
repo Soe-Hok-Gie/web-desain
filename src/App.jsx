@@ -4,6 +4,9 @@ import Intro from "./components/Intro";
 import Features from "./components/Features";
 import Service from "./components/Service";
 import Price from "./components/Price";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+
 
 
 
@@ -68,6 +71,11 @@ const App = () => {
     <Container>
      <Price/>
     <PriceShape/> 
+    </Container>
+
+    <Container>
+    <Contact/>
+    <Footer/> 
     </Container>
   </>//Route
   );
