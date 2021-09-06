@@ -26,6 +26,7 @@ const IntoShape = styled.div`
 ${Shape}
 clip-path: polygon(67% 0%, 100% 0%, 100% 100%, 55% 100%);
 background-color: burlywood;
+
 `
 
 const FeaturesShape = styled.div`
