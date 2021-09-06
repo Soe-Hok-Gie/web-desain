@@ -7,9 +7,6 @@ import Price from "./components/Price";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-
-
-
 const Container = styled.div`
   height: 100vh;
   overflow: hidden;//overflow:hidden mencegah scrollbar muncul, bahkan saat diperlukan.
