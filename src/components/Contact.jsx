@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import Map from "../img/map.png";
+import Send from "../img/send.png";
+import Phone from "../img/phone.png";
 
 const Container = styled.div`
     height: 90%;
@@ -81,6 +84,17 @@ const AddresContainer = styled.div`
 const AddresItem = styled.div`
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
+`;
+
+const Icon= styled.img`
+    width: 20px;
+    margin-right: 20px;
+`;
+
+const Text = styled.span`
+    font-size: 20px;
+    margin-right: 15px;
 `;
 
 
@@ -102,7 +116,22 @@ const Contact = () => {
                 </RightForm>
                 </Form>
             </FormContainer>
-            <AddresContainer></AddresContainer>
+            <AddresContainer>
+                <AddresItem>
+                <Icon src={Map}/>
+                <Text>Jln Manusia Merdeka,07 Menteng.</Text>
+                </AddresItem>
+                <AddresItem>
+                <Icon src={Phone}/>
+                <Text>+081377881298</Text>
+                <Text>+081376885598</Text>
+
+                </AddresItem>
+                <AddresItem>
+                <Icon src={Send}/>
+                <Text>contact@Manusiamerdeka.dev</Text>
+                </AddresItem>
+            </AddresContainer>
         </Wrapper>            
         </Container>
     );
