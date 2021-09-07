@@ -16,6 +16,11 @@ const FormContainer = styled.div`
     width: 50%;
 `;
 
+const Title = styled.h1`
+    margin: 50px;
+    
+`;
+
 const Form = styled.form`
     height: 250px;
     display: flex;
@@ -76,6 +81,7 @@ const Contact = () => {
         <Container>
             <Wrapper>
                 <FormContainer>
+                    <Title>Questions?<br/>Let Get in Touch</Title>
                 <Form>
                  <LeftForm>
                     <Input placeholder ="Your Name"/>
