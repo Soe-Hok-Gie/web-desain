@@ -53,6 +53,18 @@ const TextArea = styled.textarea`
     
 `;
 
+const Button = styled.button`
+    background-color: darkcyan;
+    color: whitesmoke;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold ;
+    padding: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+`;
+
 const AddresContainer = styled.div`
     width: 50%;
 
@@ -72,6 +84,7 @@ const Contact = () => {
                 </LeftForm>
                 <RightForm>
                     <TextArea placeholder ="Message"/>
+                    <Button>send</Button>
                 </RightForm>
                 </Form>
             </FormContainer>
