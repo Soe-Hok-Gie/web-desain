@@ -27,7 +27,7 @@ const Form = styled.form`
 const LeftForm = styled.div`
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
     margin-right: 20px;
     
@@ -37,7 +37,7 @@ const LeftForm = styled.div`
 const RightForm = styled.div`
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
 `;
 
@@ -47,9 +47,9 @@ const Input = styled.input`
 `;
 
 const TextArea = styled.textarea`
-    padding: 20px;
+    padding: 15px;
     width: 200px;
-    height: 100%;
+    height: 60%;
     
 `;
 
@@ -58,9 +58,9 @@ const Button = styled.button`
     color: whitesmoke;
     border-radius: 10px;
     border: none;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold ;
-    padding: 15px;
+    padding: 20px;
     margin-top: 20px;
     cursor: pointer;
 `;
