@@ -18,7 +18,7 @@ const FormContainer = styled.div`
 
 const Title = styled.h1`
     margin: 50px;
-    
+    margin-top: 0px;
 `;
 
 const Form = styled.form`
@@ -72,7 +72,15 @@ const Button = styled.button`
 
 const AddresContainer = styled.div`
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+`;
+
+const AddresItem = styled.div`
+    display: flex;
+    align-items: center;
 `;
 
 
